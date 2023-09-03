@@ -10,14 +10,11 @@ import avatarsImg from '../assets/avatars.png'
 import previewImg from '../assets/preview.png'
 import iconCheckImg from '../assets/icon-check.svg'
 
-interface HomeProps {
-    pollCount: number
-    guessCount: number
-    userCount: number
-}
-
-export default function Home({ pollCount, guessCount, userCount }: HomeProps) {
+export default function Home() {
     const [pollTitle, setPollTitle] = useState<string>('')
+    const [userCount] = useState<number>(0)
+    const [pollCount] = useState<number>(0)
+    const [guessCount] = useState<number>(0)
 
     const createPoll = async (event: FormEvent) => {
         event.preventDefault()
