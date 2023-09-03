@@ -1,0 +1,17 @@
+{
+    "extends": [
+        "@rocketseat/eslint-config/next"
+        // "next/core-web-vitals"
+    ],
+    "rules": {
+        "prettier/prettier": ["error", {
+            "printWidth": 130,
+            "tabWidth": 4,
+            "singleQuote": true,
+            "trailingComma": "all",
+            "arrowParens": "always",
+            "semi": false,
+            "endOfLine": "auto"
+        }]
+    }
+}
